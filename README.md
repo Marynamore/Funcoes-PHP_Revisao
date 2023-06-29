@@ -1,6 +1,6 @@
 # Repositório de Revisões das Aulas de PHP
 
-Este repositório contém revisões das aulas de PHP, incluindo exemplos de código e materiais de estudo para auxiliar no aprendizado.
+Este repositório contém revisões das aulas de PHP, incluindo exemplos de códigos para auxiliar no aprendizado.
 
 ## Instruções
 
