@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Array Multidimensional<</title>
 </head>
-<body style="background-color:#cccccc">
+<body>
     <h1 style="color:darkblue"; align="center">!! A funcao do array multidimensional !! </h1>
     <hr>
     <center>
