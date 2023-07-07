@@ -1,6 +1,6 @@
 <?php
 $situacao="S";
-SWITCH ($situacao){
+switch ($situacao){
  case "S":
     echo "Solteiro";
     break;

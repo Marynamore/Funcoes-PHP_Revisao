@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faça uma função que leia um valor inteiro entre 1 e 12 e informe o mês correspondente caso o número seja fora deste intervalo, informe que este número não existe como mês válido</title>
+    <title>Valor Inteiro</title>
 </head>
 <body>
     <div>
+        <span>
+            Faça uma função que leia um valor inteiro entre 1 e 12 e informe o mês correspondente caso o número seja fora deste intervalo, informe que este número não existe como mês válido!
+        </span>
         <?php 
             //Capturando os dados do formulário retro alimentado
-            $valor1 = $_GET['v1'] ?? 0;
+            $valor1 = $_GET['v1'] ?? 0; 
+            // Usando o operador de coalescência nula para definir o valor padrão como 0 se não houver valor enviado
         
         ?>
         <h3>Insira um número de 1 a 12 e verifique o mês correspondente</h3>
@@ -26,15 +30,22 @@
         <?php 
 
             function mes ($valor1){
+
+                // Array com os nomes dos meses
                 $meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
-                if ($valor1>=1 && $valor1 <=12){
+
+                // Verificando se o número está no intervalo de 1 a 12
+                if ($valor1 >= 1 && $valor1 <= 12){
                     echo $valor1.': ';
-                echo $meses[$valor1-1];
+                    echo $meses[$valor1-1];
+                    // Mostrando o mês correspondente com base no índice do array (subtraindo 1 do valor digitado)
+
                 } else {
                     echo 'Não existe mês com esse número!';
             }
             }
-            $resultado=mes($valor1);
+
+            $resultado = mes($valor1);
         ?>
     </section>
 </body>
